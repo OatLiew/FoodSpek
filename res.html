@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="description" content="FoodSpek">
+	    <meta name="author" content="iphong">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	    <link rel="shortcut icon" href="img/logo.png">
+	    <title>FoodSpek</title>
+
+	    <!-- hot link to Bootstrap stylesheet -->
+	    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+
+	    <!-- our own stylesheet for overrides -->
+	    <link rel="stylesheet" href="css/styles.css">
+
+	    <script type="text/javascript" src="lib/data.js"></script>
+		<script type="text/javascript" src="lib/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript" src="lib/linq.min.js"></script>
+		<script type="text/javascript" src="lib/knockout-3.0.0.js"></script>
+
+	 	<!--script>
+		// 	  $.ajax({
+		// 	    url: "http://data.kingcounty.gov/resource/f29f-zza5.json",
+		// 	    context: document.body
+		// 	  }).done(function(data) {
+
+		// 	   // var queryResult = Enumerable.From(jsonArray)
+		// 	   //  .Where(function (x) { return x.user.id < 200 })
+		// 	   //  .OrderBy(function (x) { return x.user.screen_name })
+		// 	   //  .Select(function (x) { return x.user.screen_name + ':' + x.text })
+		// 	   //  .ToArray();
+
+		// 	    // var queryResult = Enumerable.From(window.dataItems)
+		// 	    // .Where(function (x) {return new Date( x.inspection_date ).getFullYear() >= 2012}.Group(function (x) { return x.name})
+		// 	    // .ToArray();
+
+		// 	    // alert(queryResult);
+
+		// 	    ko.applyBindings(queryResult);
+
+		// 	  });
+
+		// </script-->
+
+	</head>	
+
+	<body class="index">
+
+	<!-- <table data-bind="foreach: $data">
+	  <thead>
+	<tr>
+	  <th>Name</th>
+	  <th>Date</th>
+	  <th>Status</th>
+	</tr>
+	  </thead>
+	  <tr>
+	    <td data-bind="text: name"></td>
+	    <td data-bind="text: new Date( inspection_date )"></td>
+	    <td data-bind="text: inspection_result"></td>
+	</table>	 -->
+	<nav class="navbar navbar-default" role="navigation">
+	    <div class="navbar-header">
+	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".pawnee-navbar-menu">
+	        </button>
+	    </div>	    	     
+	    <div class="collapse navbar-collapse pawnee-navbar-menu">
+	        <ul class="nav navbar-nav">
+	            <li><a href="index.html">HOME</a></li>
+	            <li><a href="checkin.html">CHECK IN</a></li>
+	            <li><a href="res.html">RESTAURANT</a></li>
+	        </ul>	
+	    </div>
+	</nav>
+
+	<div class="content-box">
+
+					<div class="row">
+						<div class="page-header">
+						  <h1> <small>Find Restaurants</small></h1>
+						</div>
+					</div>
+					<div class="row imgcenter">
+						<img src="img/logo.png" alt="logo Img" class="logoCrop imgcenter">
+					</div>
+					
+				<br>
+				<form class="form-search text-center" method="get" action="#">
+
+				  <div class="input-append">	
+					  <input type="search" class="form-control" placeholder="Search">
+					  <br>
+					  <a href="tingtaifeng.html"><button type="button" class="btn-primary">Search</button></a>
+				  </div>
+
+				</form>
+			
+	</div>
+
+	<br><br>
+	<a href="https://twitter.com/share" class="twitter-share-button padding" data-via="FoodSpek" data-size="large">Tweet</a>
+			<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],
+			p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+	<div class="fb-like" data-href="https://www.facebook.com/FoodSpek" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="false" data-send="false"></div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+	</body>	
+</html>
