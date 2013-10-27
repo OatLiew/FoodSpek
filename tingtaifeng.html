@@ -48,29 +48,39 @@
 		  		<img src="img/dinlogo.png" alt="logo Img" class="logoCrop ">
 			</div>
 		</div>
-		<h2><small>Overall Food Safety Rating:</small></h2>
+
+		<h2><small>Food Safety Rating:</small></h2>
 		<i class="fa fa-star fa-lg"></i>
 		<i class="fa fa-star fa-lg"></i>
 		<i class="fa fa-star-half-empty fa-lg"></i>
 		<i class="fa fa-star-o fa-lg"></i>
 		<i class="fa fa-star-o fa-lg"></i>
 
+		<br>
 		<table class="table table-hover">
 			<tr class="warning">
-				<td>Most Recent Routine Inspection Score</td>
-				<td>1.7 / 5</td>
+				<td>Overall Food Safety Perfomance </td>
+				<td>2.4/5</td>
 			</tr>
 
 			<tr class="warning">
-				<td>Overall Food Safety Perfomance </td>
-				<td>2.4 / 5</td>
+				<td>Most Recent Routine Inspection Score</td>
+				<td>1.7/5</td>
 			</tr>
-
-			<tr class="success"></tr>
-			<tr class="warning"></tr>
-			<tr class="danger"></tr>
-
+			<tr class="warning">
+				<td>
+					<a href="#" id="violate" class="padding btn btn-danger" rel="popover" data-content="1. Improper Time/ Temp for Potentially Hazardous Food (x2) &nbsp; &nbsp; &nbsp; 2. Contamination by Hands (x1)">Violations</a> 
+				</td>
+			</tr>
 		</table>
+
+		<script>  
+			$(function ()  
+			{ $("#violate").popover({placement:'right'});  
+			});  
+		</script>  
+
+		<br>
 		<address>
 			<h3>Address:</h3>
 			700 Bellevue Way NE<br>

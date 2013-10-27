@@ -35,10 +35,18 @@ body {
     text-align: center;
 }
 
-.btn{
+.min1{
     min-width: 130px;
 }
 
+.min2{
+    min-width: 80px;
+}
+.padding{
+    padding: 2px;
+    font-size: 12px;
+
+}
 .cropImg{
     width: 200px;
 }
